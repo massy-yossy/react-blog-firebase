@@ -1,14 +1,16 @@
 const path = require("path");
 
-const HTMLWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "devlopment",
+  mode: "development",
   entry: path.resolve(__dirname, "./src/index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+  },
+  devServer: {
+    historyApiFallback: true, //react-routerのための設定
   },
   module: {
     rules: [

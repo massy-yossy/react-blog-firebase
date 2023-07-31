@@ -1,14 +1,11 @@
-import React from 'react';
+import React from "react";
 
 import "./App.css";
 
+import Router from "./router/Router";
+
 const App = () => {
-  return (
-    <div>
-      あああああ
-    </div>
-  )
-}
+  return <Router />;
+};
 
-export default App
-
+export default App;
